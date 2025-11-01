@@ -1,0 +1,13 @@
+/* minimal, clean styling */
+:root{--accent:#1b7adb;--bg:#fff;--muted:#666}
+body{font-family:Inter,system-ui,Arial,sans-serif;margin:0;background:var(--bg);color:#111}
+.container{max-width:960px;margin:0 auto;padding:16px}
+.site-header{border-bottom:1px solid #eee;background:#fafafa}
+.site-header h1{display:inline-block;margin:10px 0}
+.site-header nav{float:right}
+.site-header nav a{margin-left:12px;color:#333;text-decoration:none}
+.hero{padding:32px 0}
+.collections{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.collections article{border:1px solid #f0f0f0;padding:12px;border-radius:8px}
+footer{border-top:1px solid #eee;padding:16px;text-align:center;color:var(--muted)}
+a{color:var(--accent)}
