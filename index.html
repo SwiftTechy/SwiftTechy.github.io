@@ -1,53 +1,101 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X7Y26M4QRV"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-X7Y26M4QRV');
+</script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Swift Techy — Tech Wiki, News & Reviews</title>
-  <meta name="description" content="Swift Techy — gadget reviews, how-tos, rumors and tools." />
-  <link rel="stylesheet" href="styles.css" />
+  <title>Swift Techy — Gadgets, News & Tools</title>
+  <meta name="description" content="Swift Techy — concise reviews, hardware news, rumor roundup and practical tools for tech enthusiasts." />
+  <link rel="canonical" href="https://swifttechy.in/" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Swift Techy — Gadgets, News & Tools" />
+  <meta property="og:description" content="Concise reviews, hardware news and software tools — curated for busy tech readers." />
+  <meta property="og:url" content="https://swifttechy.in/" />
+  <meta property="og:image" content="https://swifttechy.in/assets/og-image.jpg" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Swift Techy — Gadgets, News & Tools" />
+  <meta name="twitter:description" content="Concise reviews, hardware news and software tools — curated for busy tech readers." />
+  <meta name="twitter:image" content="https://swifttechy.in/assets/og-image.jpg" />
+
+  <!-- Structured data: WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Swift Techy",
+    "url": "https://swifttechy.in/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://swifttechy.in/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Link to style (create styles.css) -->
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <!-- GA4 snippet place (paste your GA4 id below) -->
+  <!-- Paste GA4 snippet here (see separate section) -->
 </head>
 <body>
-  <header class="site-header">
+  <header>
     <div class="container">
       <h1><a href="/">Swift Techy</a></h1>
       <nav>
         <a href="/categories/tech-wiki.html">Tech Wiki</a>
         <a href="/categories/latest-news.html">Latest News</a>
-        <a href="/categories/upcoming-hardware.html">Upcoming Hardware</a>
         <a href="/categories/rumors.html">Rumors</a>
-        <a href="/categories/tools.html">Software Tools</a>
+        <a href="/categories/tools.html">Tools</a>
         <a href="/about.html">About</a>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <section class="hero">
-      <h2>Fast tech guides, reviews & news — India-focused</h2>
-      <p>Explore Tech Wiki, latest stories, hardware rumors, and tools.</p>
+    <section id="hero">
+      <h2>Fast tech reads, reviews & tools</h2>
+      <p>Curated hardware news, software tools, and practical how-tos.</p>
     </section>
 
-    <section class="collections">
-      <article>
-        <h3><a href="/categories/tech-wiki.html">Tech Wiki</a></h3>
-        <p>In-depth explainers and reference pages for components, CPUs, GPUs and more.</p>
-      </article>
-      <article>
-        <h3><a href="/categories/latest-news.html">Latest News</a></h3>
-        <p>Daily tech headlines and quick takes.</p>
-      </article>
-      <article>
-        <h3><a href="/categories/upcoming-hardware.html">Upcoming Hardware</a></h3>
-        <p>Release schedules and hands-on previews.</p>
-      </article>
+    <section id="latest">
+      <h3>Latest Posts</h3>
+      <ul>
+        <!-- Replace with generated list of posts or manual links -->
+        <li><a href="/posts/amd-ryzen-7-5800x.html">AMD Ryzen 7 5800X — concise review</a> — Oct 31, 2025</li>
+        <li><a href="/posts/quick-guide-gpu-upgrade.html">Quick guide: GPU upgrade</a> — Oct 20, 2025</li>
+      </ul>
     </section>
+
+    <aside>
+      <h4>Categories</h4>
+      <ul>
+        <li><a href="/categories/tech-wiki.html">Tech Wiki</a></li>
+        <li><a href="/categories/latest-news.html">Latest News</a></li>
+        <li><a href="/categories/rumors.html">Rumors</a></li>
+        <li><a href="/categories/tools.html">Tools</a></li>
+      </ul>
+    </aside>
   </main>
 
-  <footer class="container">
-    <p>© <span id="year"></span> Swift Techy — hosted on GitHub Pages</p>
+  <footer>
+    <div class="container">
+      <p>© 2025 Swift Techy. All rights reserved.</p>
+      <p><a href="/sitemap.xml">Sitemap</a> • <a href="/robots.txt">robots.txt</a></p>
+    </div>
   </footer>
-
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
+
+
